@@ -1,11 +1,28 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React from 'react'
- 
+import React, { useEffect, useRef } from 'react'
+import { useLocation ,useParams} from 'react-router-dom'
 import Client from '../components/Client'
 import { useState } from 'react'
 import Editor from '../components/Editor'
+import {initSocket} from '../socket';
+import ACTIONS from '../Actions';
 
 const editorPage = () => {
+    const socketRef = useRef(null); 
+    const location =useLocation();
+    //const { roomId } = useParams();
+    useEffect(() =>{
+        console.log("Entered here");
+        const init = async ()=>{    
+                socketRef.current =await initSocket();
+
+                // socketRef.current.emit(ACTIONS.JOIN ,{
+                //     roomId, 
+                //     userName: location.state?.userName,
+                // });
+        }
+        init();
+    },[])
     const [clients , setClients] = useState([
         {sockedId:123 , username:"Sathwik"},
         {sockedId:124 , username:"karthi"},
