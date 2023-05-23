@@ -1,0 +1,134 @@
+.homePageContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 100vh;
+}
+
+.formContainer{
+  background-color: #282a36;
+  padding: 20px;
+  border-radius: 11px;
+  width: 400px;
+  max-width: 90%;
+}
+ 
+
+footer{
+  position: fixed;
+  bottom: 0px;
+}
+footer a{
+  color: #4aee88;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.mainLabel{
+  margin-top: 0;
+  margin-bottom: 2%;
+}
+.logoMain{
+  height: 10vh;
+   
+}
+.ipnutBox{
+  padding: 1%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 1%;
+  background-color: #eee;
+  font-size: small;
+  font-weight: bold;
+}
+
+.btn{
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 1%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.joinRoom{
+  background: #4aee88;
+  width: 20%;
+  margin-left: auto;
+}
+
+.joinRoom:hover{
+  background: #2b824c;
+}
+.createRoom{
+  margin : 0 auto;
+  margin-top: 1%;
+}
+.createRoom a{
+  color: #4aee88;
+  text-decoration: none;
+  border-bottom: 1px solid #4aee88;
+  transition: all 0.3s ease-in-out;
+}
+
+.mainWrap{
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  height: 100vh;
+}
+
+.gallery{
+  background:#1c1e29 ;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+
+}
+.galleryInner{
+  flex: 1;
+}
+
+.listOfClients{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5%;
+  /* justify-content: space-evenly; */
+}
+
+.client{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+.userName{margin-top: 5px;}
+
+.logo{
+  border-bottom: 1px solid #424242;
+  padding-bottom: 2%;
+}
+
+.logoImage{
+  height: 10vh;
+}
+.leave-btn ,.copy-btn{
+  padding: 5px;
+}
+
+.leave-btn:hover {
+  background: #2b824c;
+}
+.leave-btn{
+  background: #4aee88;
+
+  margin-top: 3%;
+}
